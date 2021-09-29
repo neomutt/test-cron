@@ -1,0 +1,20 @@
+name: cron
+on:
+  push:
+    branches:
+      - '*'
+  # schedule:
+  #   - cron: '* * * * *'
+
+jobs:
+  build:
+    name: cron-test
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Hello
+      run: |
+        echo hello
+        date
+        set
+
